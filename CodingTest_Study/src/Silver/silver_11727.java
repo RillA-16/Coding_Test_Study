@@ -2,7 +2,7 @@ package Silver;
 
 import java.util.Scanner;
 
-public class silver_11726 {
+public class silver_11727 {
 
 	static int[] arr;
 
@@ -15,8 +15,8 @@ public class silver_11726 {
 
 		arr[0] = 0;
 		arr[1] = 1;
-		arr[2] = 2;
-		
+		arr[2] = 3;
+
 		sc.close();
 
 		System.out.println(tile(n));
@@ -24,7 +24,8 @@ public class silver_11726 {
 
 	public static int tile(int yData) {
 		for (int i = 3; i <= yData; i++) {
-			arr[i] = (arr[i - 1] + arr[i - 2]) % 10007;
+			// 조각의 길이 계산 1, 2, 2 x 2
+			arr[i] = (arr[i - 1] + arr[i - 2] + arr[i - 2]) % 10007;
 		}
 
 		return arr[yData];
