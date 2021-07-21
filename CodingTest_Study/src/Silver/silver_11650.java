@@ -12,9 +12,6 @@ public class silver_11650 {
 
 		int[][] point = new int[n][2];
 
-		int[] xPoint = new int[n];
-		int[] yPoint = new int[n];
-
 		for (int i = 0; i < n; i++) {
 			for (int l = 0; l < 2; l++) {
 				point[i][l] = sc.nextInt();
@@ -23,14 +20,11 @@ public class silver_11650 {
 
 		sc.close();
 
-		System.out.println();
-
 		// 이게 뭘까,,,,,,,,,,,,,,정말로
 		Arrays.sort(point, new Comparator<int[]>() {
 			@Override
 			public int compare(int[] o1, int[] o2) {
-				System.out.println(o1[1] + " 1");
-//				System.out.println(o2[0] + " 2");
+
 				if (o1[0] == o2[0]) {
 					return o1[1] - o2[1];
 				}
@@ -38,16 +32,20 @@ public class silver_11650 {
 			}
 		});
 
-		System.out.println();
+//		System.out.println();
+//
+//		for (int m = 0; m < n; m++) {
+//			for (int b = 0; b < 2; b++) {
+//				System.out.print(point[m][b] + " ");
+//			}
+//			System.out.println();
+//		}
 
-		for (int m = 0; m < n; m++) {
-			for (int b = 0; b < 2; b++) {
-//				System.out.println(m + " a는?");
-//				System.out.println(b + " b는?");
-				System.out.print(point[m][b] + " ");
-			}
-			System.out.println();
+		StringBuilder sb = new StringBuilder();
+		for (int i = 0; i < n; i++) {
+			sb.append(point[i][0] + " " + point[i][1]).append('\n');
 		}
+		System.out.println(sb);
 	}
 
 //	int[] xPoint = new int[n];
