@@ -22,7 +22,6 @@ public class Bronze_2798 {
 		for (int f = 0; f < N - 2; f++) {
 			for (int s = f + 1; s < N - 1; s++) {
 				for (int t = s + 1; t < N; t++) {
-
 					int sum = card[f] + card[s] + card[t];
 
 					if (sum <= M && result < sum) {
