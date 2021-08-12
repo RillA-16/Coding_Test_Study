@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Bronze_2231 {
 
 	public static void main(String[] args) {
-		
+
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		int size = String.valueOf(n).length(); // n의 자리수를 구하기 위한..
