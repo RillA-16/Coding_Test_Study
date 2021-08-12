@@ -10,8 +10,7 @@ public class silver_7568 {
 		int people = sc.nextInt();
 
 		int arr[][] = new int[2][people];
-		int rank[] = new int[people];
-
+	
 		for (int i = 0; i < people; i++) {
 			arr[0][i] = sc.nextInt();
 			arr[1][i] = sc.nextInt();
